@@ -1,6 +1,12 @@
 [profile.default]
-src = 'src'
+src = 'contracts'
 out = 'out'
 libs = ['lib']
 
-# See more config options https://github.com/foundry-rs/foundry/tree/master/config
+[rpc_endpoints]
+mainnet = "${ETH_RPC_URL}"
+goerli = "${GOERLI_RPC_URL}"
+polygon = "${POLYGON_RPC_URL}"
+local = "http://127.0.0.1:8545"
+
+# See more config options https://github.com/gakonst/foundry/tree/master/config
